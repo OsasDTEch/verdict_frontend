@@ -68,7 +68,7 @@ const Dashboard = () => {
               <h1 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent">
                 Verdict AI
               </h1>
-              <p className="text-xs text-gray-500">Intelligent Assistant</p>
+              <p className="text-xs text-gray-500">Law Research Assistant</p>
             </div>
           </div>
 
