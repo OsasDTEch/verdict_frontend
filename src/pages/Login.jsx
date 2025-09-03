@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+    useEffect(() => {
+      const token = localStorage.getItem("token");
+      if (token) return navigate("/dashboard");
+  
+    }, [navigate]);
+  
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
